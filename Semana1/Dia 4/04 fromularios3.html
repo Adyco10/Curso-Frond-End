@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+ <title>Formularios 3 </title>
+</head>
+<!-- validacion de campos  -->
+<body>
+ <Header>
+  <h1> Formularios</h1>
+ </Header>
+ <main>
+  <section>
+   <form>
+    <table>
+     <tbody>
+      <tr>
+       <td><label for="nombrecurso">Nombre del Curso </label></td>
+       <td><input type="text" id="nombrecurso" placeholder="Ejm: Vue JS desde cero" required maxlength="30" minlength="5" /></td>
+      <!-- required campo requerido , y maxlength pones el maximo de carateres  -->
+    </tr>
+      <tr>
+       <td> <label for="preciocurso">Precio del curso</label></td>
+       <td><input type="number" id="preciocurso" placeholder="precio en soles " min="0" max= "300" /></td>
+      </tr>
+      <tr>
+       <td> <label for="fechainicio">Fecha de Inicio</label></td>
+       <td><input type="date" id="fechainicio"  /></td>
+      </tr>
+      <tr>
+       <td> <label for="correodocente">Correo del Docente</label></td>
+       <td><input type="email" id="correodocente" placeholder=" Correo corporativo" value="@qw.gob.pe" /></td>
+      </tr>
+      <tr>
+       <td> <label for="passwordcurso">Password</label></td>
+       <td><input type="password" id="passwordcurso" placeholder=" 6 caracteres minimo" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        title="Minimo 8 caracteres, 1 minuscula, 1 ,masyuscula" required /></td>
+      
+    </tr>
+      <tr>
+       <td> <label> Elija turno</label></td>
+       <td>
+        <label for="radiodia">Mañana</label>
+         <input type="radio" id="radiodia" name="turno" checked > 
+        <label for="radionoche">Noche</label>
+         <input type="radio" id="radionoche" name="turno"/>
+       </td>
+      </tr>
+      <tr>
+       <td><label >Idiomas del curso </label>
+      <td>
+        <label for="idiomaes">Espñaol</label>
+       
+        <input type="checkbox" id="idiomaes" />
+        <label for="idiomaen">ingles</label>
+       
+        <input type="checkbox" id="idiomaen" />
+
+       </td>
+       <tr>
+        <td><td><label for = "niveldelcurso" >nivel del curso </label></td>
+        <td>
+         <select name="" id="niveldelcurso">
+          <option value="" selected >--Seleccione--</option>
+          <option value="">Basico--</option>
+          <option value="">Intermedio</option>
+          <option value="">Avanzado</option>
+         </select>
+        </td>
+       </tr>
+      </tr>
+      <tr>
+       <td><label for="descripcioncurso">Descripcion del Curso: </label></td>
+       <td><textarea name="" id="descripcioncurso" cols="20" rows="5"></textarea></td>
+      </tr>
+      <tr>
+       <td><label for="videofile">Video Introduccion :</label></td>
+       <td><input type="file" id="videofile"></td>
+      </tr>
+      <tr>
+       <td><label for="colorcurso"> Color Base del curso </label></td>
+       <td><input type="color" id="colorcurso"> </td>
+       <tr>
+        <td><input type="submit" value="Crear Curso"> </td>
+        <td><input type="reset" value="Limpiar formulario"> </td>
+       </tr>
+
+      </tr>
+     </tbody>
+    </table>
+
+
+
+   </form>
+  </section>
+ </main>
+</body>
+
+</html>
