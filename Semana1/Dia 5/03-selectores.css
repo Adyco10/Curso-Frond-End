@@ -1,0 +1,9 @@
+/* selector de etiqueta */
+/* todos los h2 de la pagina */
+
+label {
+    color: teal;
+}
+h2,h1 {
+    color: tomato;
+}
